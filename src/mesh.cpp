@@ -213,7 +213,7 @@ bool Mesh::InitMaterials(const aiScene* pScene, const std::string& Filename)
 
         // Load a white texture in case the model does not include its own texture
         if (!m_Textures[i]) {
-            m_Textures[i] = new Texture(GL_TEXTURE_2D, "/home/letrend/workspace/poseestimator/images/white.png");
+            m_Textures[i] = new Texture(GL_TEXTURE_2D, "/home/letrend/workspace/markertracker/omgl/images/white.png");
 
             Ret = m_Textures[i]->Load();
         }
